@@ -1,5 +1,5 @@
-if _G.XRQA-HUB_AlreadyLoaded ~= nil then error("XRQA-HUB is already running, dumbass! or maybe you just have other scripts executed.") return else
-    _G.XRQA-HUB2_AlreadyLoaded = 0
+if _G.SnowHubv2_AlreadyLoaded ~= nil then error("XRQA HUB is already running, dumbass! or maybe you just have other scripts executed.") return else
+    _G.SnowHubv2_AlreadyLoaded = 0
 end
 
 
@@ -192,12 +192,12 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-I
 
 -- Window
 local Window = Rayfield:CreateWindow({
-    Name = "XRQA-HUB | Universal",
-    LoadingTitle = "XRQA-HUB",
+    Name = "SnowHubv2 | Universal",
+    LoadingTitle = "XRQA HUB",
     LoadingSubtitle = "by XRQA",
     ConfigurationSaving = {
        Enabled = false,
-       FolderName = "XRQA-HUB", -- Create a custom folder for your hub/game
+       FolderName = "Snow Hubv2", -- Create a custom folder for your hub/game
        FileName = "Universal_Config"
     },
     Discord = {
@@ -207,7 +207,7 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = false, -- Set this to true to use our key system
     KeySettings = {
-        Title = "XRQA-HUB",
+        Title = "XRQA HUB",
         Subtitle = "Key System",
         Note = "Key System is under development. Currently the key is 'snowhub.key', in ONE word",
         FileName = "Key",
@@ -220,9 +220,9 @@ local Window = Rayfield:CreateWindow({
 
 -- Start Up Prompt
 Window:Prompt({
-	Title = 'XRQA-HUB',
+	Title = 'XRQA HUB',
 	SubTitle = 'Universal',
-	Content = 'This is the Universal version of XRQA-HUB. Join the discord to find supported games. Its somewhere',
+	Content = 'This is the Universal version of XRQA HUB. Join the discord to find supported games. Its somewhere',
 	Actions = {
 		Accept = {
 			Name = 'Okay',
